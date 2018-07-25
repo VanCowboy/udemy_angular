@@ -1,0 +1,26 @@
+/*favorite.component.css */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+.custom-fa input[type="checkbox"] {position:absolute;left:-999px;}
+.custom-fa input[type="checkbox"]:focus + span{color:#46c0ef;}
+.custom-fa label{cursor: pointer;}
+.custom-fa label input[type="checkbox"] + span:before { 
+    font-family: FontAwesome;
+    content: "\f005";  
+    display: inline-block;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4em;
+    text-align:center;
+    letter-spacing: 6px;
+  }
+.custom-fa label input[type="checkbox"]:checked + span:before { 
+  content: "\f006";letter-spacing: 3px;
+}
+   
+ /* checked icon */
+ 
+.custom-fa label input[type="checkbox"]:indeterminate + span:before{
+  content: "\f006";letter-spacing: 6px;
+}
+ 
