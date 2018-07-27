@@ -1,4 +1,7 @@
 <h1>Angular</h1>
 <app-authors></app-authors>
-<app-courses></app-courses> 
-<favorite></favorite>
+<app-courses></app-courses><p>
+<p><input type="text" [(ngModel)]="title">
+<br>
+{{ title | titleCase }}</p>
+<app-favorite></app-favorite>
